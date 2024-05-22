@@ -6,14 +6,15 @@ A Laravel package for integrating with Dhiraagu Bulk SMS API.
 
 1.  **Add the Repository to Composer**
 
-        composer config repositories.dhiraagu-bulk-sms git https://github.com/hashes02/DhiraaguBulkSms_setup.git
+        composer config repositories.dhiraagu-bulk-sms vcs https://github.com/hashes02/DhiraaguBulkSms.git
         composer require hashes02/dhiraagu-bulk-sms:dev-master
 
-2.  **Publish the Configuration**
+
+3.  **Publish the Configuration**
 
         php artisan vendor:publish --provider="Hashes02\\DhiraaguBulkSms\\SmsServiceProvider"
 
-3.  **Add Environment Variables**
+4.  **Add Environment Variables**
     Add the following to your `.env` file:
 
         SMS_SENDER_ID=yourSenderId
