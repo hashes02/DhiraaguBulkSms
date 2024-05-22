@@ -52,7 +52,7 @@ A Laravel package for integrating with Dhiraagu Bulk SMS API.
 
 3.  **Create the Form**
 
-In your view:
+   In your view:
 
         <form method="POST" action="/send-sms">
         @csrf
