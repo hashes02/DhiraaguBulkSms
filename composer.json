@@ -1,0 +1,23 @@
+{
+    "name": "hashes02/dhiraagu-bulk-sms",
+    "description": "A Laravel package for Dhiraagu Bulk SMS",
+    "type": "library",
+    "require": {
+        "php": "^7.3|^8.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hashes02\\DhiraaguBulkSms\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hashes02\\DhiraaguBulkSms\\SmsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
