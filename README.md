@@ -6,8 +6,7 @@ A Laravel package for integrating with Dhiraagu Bulk SMS API.
 
 1.  **Add the Repository to Composer**
 
-        composer config repositories.dhiraagu-bulk-sms vcs https://github.com/hashes02/DhiraaguBulkSms.git
-        composer require hashes02/dhiraagu-bulk-sms:dev-master
+        composer require hashes02/dhiraagu-bulk-sms
 
 
 3.  **Publish the Configuration**
@@ -61,3 +60,11 @@ In your view:
             <textarea name="message" placeholder="Message"></textarea>
             <button type="submit">Send SMS</button>
         </form>
+
+## Usage 
+
+        use DhiraaguBulkSms\DhiraaguBulkSms;
+
+        $sms = new DhiraaguBulkSms();
+        $sms->send('recipient_number', 'Your message here');
+
